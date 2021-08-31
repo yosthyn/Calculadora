@@ -47,29 +47,33 @@ public class MainActivity extends AppCompatActivity {
                 setDigito("1");
             }
 
+
         });
         btn_two.setOnClickListener (new View.OnClickListener(){
                 public void onClick(View v){
                     setDigito("2");
                 }
 
+¨
         });
         btn_three.setOnClickListener (new View.OnClickListener(){
             public void onClick(View v){
-                setDigito("3");
+                    setDigito("3");
             }
+
 
         });
         btn_four.setOnClickListener (new View.OnClickListener(){
             public void onClick(View v){
                 setDigito("4");
+            }
 
 
-
-        });
+            {);
         btn_five.setOnClickListener (new View.OnClickListener(){
             public void onClick(View v){
                 setDigito("5");
+
             }
 
         });
@@ -93,5 +97,37 @@ public class MainActivity extends AppCompatActivity {
 
         });
         btn_nine.setOnClickListener (new View.OnClickListener(){
-                public void onClick(View v){
-                    setDigito("9");
+            public void onClick(View v){
+                setDigito("9");
+            }
+
+
+        });
+        btn_add.setOnClickListener (new View.OnClickListener(){
+            public void onClick(View v){
+            setDigito("+");
+        }
+
+    });
+        btn_substract.setOnClickListener (new View.OnClickListener(){
+        public void onClick(View v){
+        setDigito("-");
+        }
+
+      });
+        btn_decimal.setOnClickListener (new View.OnClickListener(){
+           public void onClick(View v){
+        setDigito("=");
+        }
+
+        });
+        btn_.multiplysetOnClickListener (new View.OnClickListener(){
+         public void onClick(View v){
+        setDigito("*");
+        }
+
+        });
+        btn_.dividesetOnClickListener (new View.OnClickListener(){
+                    public void onClick(View v){
+                        setDigito("/");
+                    }
