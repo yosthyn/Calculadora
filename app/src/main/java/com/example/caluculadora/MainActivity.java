@@ -7,36 +7,37 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.material.timepicker.ChipTextInputComboView;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // Asignamos los botones numericos
         Button btn_zero = (Button) this.findViewById(R.id.btn_zero);
-        Button btn_one = (Button) this.findViewById(R.1d.btn_one);
-        Button btn_two = (Button) this.findViewById(R.1d.btn_two);
-        Button btn_thee = (Button) this.findViewById(R.1d.btn_thee);
-        Button btn_foor = (Button) this.findViewById(R.1d.btn_foor);
-        Button btn_five = (Button) this.findViewById(R.1d.btn_five);
-        Button btn_six = (Button) this.findViewById(R.1d.btn_six);
-        Button btn_seven = (Button) this.findViewById(R.1d.btn_seven);
-        Button btn_eigth = (Button) this.findViewById(R.1d.btn_eigth);
-        Button btn_nine = (Button) this.findViewById(R.1d.btn_nine);
+        Button btn_one = (Button) this.findViewById(R.id.btn_one);
+        Button btn_two = (Button) this.findViewById(R.id.btn_two);
+        Button btn_three = (Button) this.findViewById(R.id.btn_three);
+        Button btn_four = (Button) this.findViewById(R.id.btn_four);
+        Button btn_five = (Button) this.findViewById(R.id.btn_five);
+        Button btn_six = (Button) this.findViewById(R.id.btn_six);
+        Button btn_seven = (Button) this.findViewById(R.id.btn_seven);
+        Button btn_eigth = (Button) this.findViewById(R.id.btn_eigth);
+        Button btn_nine = (Button) this.findViewById(R.id.btn_nine);
         //Asignamos los botones operaciones
         Button btn_add = (Button) this.findViewById(R.id.btn_add);
         Button btn_substract = (Button) this.findViewById(R.id.btn_substract);
         Button btn_multiply = (Button) this.findViewById(R.id.btn_multiply);
         Button btn_divide = (Button) this.findViewById(R.id.btn_divide);
+        Button btn_decimal = (Button) this.findViewById(R.id.btn_decimal);
         Button btn_backspace = (Button) this.findViewById(R.id.btn_backspace);
         Button btn_dot = (Button) this.findViewById(R.id.btn_dot);
         Button btn_clear = (Button) this.findViewById(R.id.btn_clear);
+        Button btn_equal = (Button) this.findViewById(R.id.btn_equal);
         //Asignamos la pantalla
         TextView txt_display = (TextView) this.findViewById(R.id.txt_display);
-
+        }
+        });
         btn_zero.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 setDigito("0");
@@ -46,30 +47,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 setDigito("1");
             }
-
-
         });
         btn_two.setOnClickListener (new View.OnClickListener(){
                 public void onClick(View v){
                     setDigito("2");
                 }
-
-¨
         });
         btn_three.setOnClickListener (new View.OnClickListener(){
             public void onClick(View v){
                     setDigito("3");
             }
 
-
         });
         btn_four.setOnClickListener (new View.OnClickListener(){
             public void onClick(View v){
                 setDigito("4");
             }
-
-
-            {);
+        });
         btn_five.setOnClickListener (new View.OnClickListener(){
             public void onClick(View v){
                 setDigito("5");
@@ -117,17 +111,47 @@ public class MainActivity extends AppCompatActivity {
       });
         btn_decimal.setOnClickListener (new View.OnClickListener(){
            public void onClick(View v){
-        setDigito("=");
+        setDigito(".");
         }
 
         });
-        btn_.multiplysetOnClickListener (new View.OnClickListener(){
+        btn_multiply.setOnClickListener (new View.OnClickListener(){
          public void onClick(View v){
-        setDigito("*");
+               setDigito("*");
         }
 
         });
-        btn_.dividesetOnClickListener (new View.OnClickListener(){
+        btn_divide.setOnClickListener (new View.OnClickListener(){
                     public void onClick(View v){
                         setDigito("/");
                     }
+        });
+        btn_backspace.setOnClickListener (new View.OnClickListener(){
+            public void onClick(View v){
+                setDigito("←");
+            }
+
+        });
+        btn_dot.setOnClickListener (new View.OnClickListener(){
+            public void onClick(View v){
+                setDigito(".");
+            }
+
+        });
+        btn_clear.setOnClickListener (new View.OnClickListener(){
+            public void onClick(View v){
+                setDigito("C");
+            }
+        });
+        btn_equal.setOnClickListener (new View.OnClickListener(){
+            public void onClick(View v){
+                setDigito("=");
+            }
+
+        void setDigito(String digito){
+                TextView txt_display = (TextView) this.findViewById(R.id.txt_display);
+                String actual = txt_display.getText().toString();
+                String nuevo = actual + digito;
+                txt_display.setText(nuevo);
+        }
+
