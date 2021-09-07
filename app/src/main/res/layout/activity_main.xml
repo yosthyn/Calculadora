@@ -7,26 +7,25 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/txt_display"
         android:layout_width="377dp"
         android:layout_height="68dp"
-        android:text="0"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="69dp" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/btn_backspace"
         android:layout_width="153dp"
         android:layout_height="107dp"
         android:layout_marginEnd="20dp"
         android:text="←"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintEnd_toStartOf="@+id/button22"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clear"
         tools:layout_editor_absoluteY="153dp" />
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/btn_clear"
         android:layout_width="100dp"
         android:layout_height="107dp"
         android:text="C"
@@ -35,7 +34,7 @@
         tools:layout_editor_absoluteY="153dp" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/btn_multiply"
         android:layout_width="97dp"
         android:layout_height="107dp"
         android:text="*"
@@ -44,7 +43,7 @@
         tools:layout_editor_absoluteY="152dp" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/btn_one"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="1"
@@ -53,7 +52,7 @@
         tools:layout_editor_absoluteY="260dp" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/btn_two"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="2"
@@ -62,7 +61,7 @@
         tools:layout_editor_absoluteY="260dp" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/btn_three"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="3"
@@ -71,7 +70,7 @@
         tools:layout_editor_absoluteY="260dp" />
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/btn_divide"
         android:layout_width="97dp"
         android:layout_height="107dp"
         android:text="/"
@@ -80,7 +79,7 @@
         tools:layout_editor_absoluteY="260dp" />
 
     <Button
-        android:id="@+id/button28"
+        android:id="@+id/btn_four"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="4"
@@ -89,17 +88,16 @@
         tools:layout_editor_absoluteY="377dp" />
 
     <Button
-        android:id="@+id/button29"
+        android:id="@+id/btn_five"
         android:layout_width="92dp"
         android:layout_height="107dp"
-        android:layout_marginTop="8dp"
         android:text="5"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintTop_toBottomOf="@+id/button25"
-        tools:layout_editor_absoluteX="102dp" />
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="377dp" />
 
     <Button
-        android:id="@+id/button30"
+        android:id="@+id/btn_six"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="6"
@@ -108,7 +106,7 @@
         tools:layout_editor_absoluteY="377dp" />
 
     <Button
-        android:id="@+id/button31"
+        android:id="@+id/btn_substract"
         android:layout_width="97dp"
         android:layout_height="107dp"
         android:text="-"
@@ -117,7 +115,7 @@
         tools:layout_editor_absoluteY="377dp" />
 
     <Button
-        android:id="@+id/button32"
+        android:id="@+id/btn_seven"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="7"
@@ -126,7 +124,7 @@
         tools:layout_editor_absoluteY="503dp" />
 
     <Button
-        android:id="@+id/button33"
+        android:id="@+id/btn_eight"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="8"
@@ -135,7 +133,7 @@
         tools:layout_editor_absoluteY="503dp" />
 
     <Button
-        android:id="@+id/button34"
+        android:id="@+id/btn_nine"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="9"
@@ -144,7 +142,7 @@
         tools:layout_editor_absoluteY="503dp" />
 
     <Button
-        android:id="@+id/button35"
+        android:id="@+id/btn_add"
         android:layout_width="97dp"
         android:layout_height="107dp"
         android:text="+"
@@ -153,7 +151,7 @@
         tools:layout_editor_absoluteY="503dp" />
 
     <Button
-        android:id="@+id/button36"
+        android:id="@+id/btn_decimal"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="."
@@ -162,7 +160,7 @@
         tools:layout_editor_absoluteY="610dp" />
 
     <Button
-        android:id="@+id/button37"
+        android:id="@+id/btn_zero"
         android:layout_width="92dp"
         android:layout_height="107dp"
         android:text="0"
@@ -171,7 +169,7 @@
         tools:layout_editor_absoluteY="610dp" />
 
     <Button
-        android:id="@+id/button38"
+        android:id="@+id/btn_equal"
         android:layout_width="191dp"
         android:layout_height="107dp"
         android:text="="
@@ -180,13 +178,13 @@
         tools:layout_editor_absoluteY="610dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/app_name"
         android:layout_width="400dp"
         android:layout_height="57dp"
         android:text="Calculadora"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="3dp" />
+        tools:layout_editor_absoluteY="12dp" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
