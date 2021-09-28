@@ -18,4 +18,5 @@
     <string name="btn_divide">/</string>
     <string name="btn_decimal">.</string>
     <string name="btn_equal">=</string>
+    <string name="textView_txt_display">textView</string>
 </resources>
